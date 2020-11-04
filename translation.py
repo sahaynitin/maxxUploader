@@ -1,5 +1,5 @@
 class Translation:
-    START_TEXT = """***Welcome To Max Uploader!***
+    START_TEXT = """<b>Welcome To Max Uploader!</b>
 Send Me Any DDL/Youtube-DL Link, I Will Then Upload It To Telegram As File/Video
 Click /help For More Info...
 """
@@ -9,8 +9,8 @@ Click /help For More Info...
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
 URL | filename | username | password"""
     NOYES_URL = "@robot URL detected. Please use @transload and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
-    DOWNLOAD_START = "Download Started"
-    UPLOAD_START = "Upload Started"
+    DOWNLOAD_START = "<b>Download Started</b>"
+    UPLOAD_START = "<b>Upload Started</b>"
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations."
     AFTER_SUCCESSFUL_UPLOAD_MSG = "Please rate me if you find me useful. https://t.me/tlgrmcbot?start=anydl_bot-bot"
@@ -34,9 +34,7 @@ URL | filename | username | password"""
 👉 Generate Custom Thumbnail by sending two photos in a Media Album
 👉 Trim large videos, and Take Screenshots of Telegram media files.
 👉 Extract compressed Telegram media
-👉 Get a Telegram sticker as a Telegram downloadable media
---------
-Send /me to know current plan details"""
+👉 Get a Telegram sticker as a Telegram downloadable media"""
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
     REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"

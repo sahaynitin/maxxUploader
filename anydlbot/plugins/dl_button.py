@@ -242,9 +242,9 @@ async def download_coroutine(
         await bot.edit_message_text(
             chat_id,
             message_id,
-            text="""**Initiating Download**
-**URL:** {}
-**File Size:** {}""".format(url, humanbytes(total_length))
+            text="""<b>Initiating Download</b>
+<b>URL:</b> {}
+<b>File Size:</b> {}""".format(url, humanbytes(total_length))
         )
         with open(file_name, "wb") as f_handle:
             while True:
@@ -264,11 +264,11 @@ async def download_coroutine(
                     ) * 1000
                     estimated_total_time = elapsed_time + time_to_completion
                     try:
-                        current_message = """**Download Status**
-**URL:** {}
-**File Size:** {}
-**Downloaded:** {}
-**ETA:** {}
+                        current_message = """<b>Download Status</b>
+<b>URL:</b> {}
+<b>File Size:</b> {}
+<b>Downloaded:</b> {}
+<b>ETA:</b> {}
 """.format(
                             url,
                             humanbytes(total_length),
