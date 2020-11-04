@@ -242,9 +242,9 @@ async def download_coroutine(
         await bot.edit_message_text(
             chat_id,
             message_id,
-            text="""Initiating Download
-URL: {}
-File Size: {}""".format(url, humanbytes(total_length))
+            text="""**Initiating Download**
+**URL:** {}
+**File Size:** {}""".format(url, humanbytes(total_length))
         )
         with open(file_name, "wb") as f_handle:
             while True:
@@ -265,12 +265,11 @@ File Size: {}""".format(url, humanbytes(total_length))
                     estimated_total_time = elapsed_time + time_to_completion
                     try:
                         current_message = """**Download Status**
-URL: {}
-File Size: {}
-Downloaded: {}
-ETA: {}
-
-©️ @AnyDLBot""".format(
+**URL:** {}
+**File Size:** {}
+**Downloaded:** {}
+**ETA:** {}
+""".format(
                             url,
                             humanbytes(total_length),
                             humanbytes(downloaded),
