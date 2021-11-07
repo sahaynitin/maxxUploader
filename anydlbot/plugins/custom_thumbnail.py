@@ -6,7 +6,6 @@
 import logging
 import os
 from pyrogram import client,filters
-)
 from anydlbot import (
     AUTH_USERS,
     DOWNLOAD_LOCATION
