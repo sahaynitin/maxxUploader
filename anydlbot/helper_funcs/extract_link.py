@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 # (c) Shrimadhav U K
 
-from pyrogram import Message
 
 
 def get_link(update: Message):
