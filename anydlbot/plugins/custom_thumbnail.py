@@ -5,9 +5,7 @@ from anydlbot import (
     DOWNLOAD_LOCATION
 
 
-import os
 from PIL import Image
-import time
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
