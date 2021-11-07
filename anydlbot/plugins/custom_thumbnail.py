@@ -5,9 +5,7 @@
 # the logging things
 import logging
 import os
-from pyrogram import (
-    Client,
-    Filters
+from pyrogram import client,filters
 )
 from anydlbot import (
     AUTH_USERS,
