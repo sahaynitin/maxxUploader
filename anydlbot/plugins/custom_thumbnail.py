@@ -4,7 +4,7 @@
 from anydlbot import (
     DOWNLOAD_LOCATION
 
-import numpy
+
 import os
 from PIL import Image
 import time
